@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Nunito:wght@300;400;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Poppins", serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    color: black;
+    text-transform: uppercase;
+}
+
+
+/* LOGO */
+.logo {
+    font-size: 2rem;
+    color: black;
+
+}
+
+.logo-Text {
+    margin:0rem 2rem;
+    /* background-color: red; */
+}
+
+.r {
+    font-family: "Nunito";
+    color: #fc7b54;
+    font-size: 4.5rem;
+}
+
+
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.menu li a {
+    color: black;
+}
+
+.menu li a:hover {
+    color: #fc7b54;
+    transition: 0.3s ease;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+/* DROPDOWN MENU */
+.services {
+    position: relative;
+}
+
+.active {
+    color: #fc7b54;
+}
+
+
+input[type=checkbox] {
+    display: none;
+}
+
+/*HAMBURGER MENU*/
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+        height: 500px;
+        background-color: red;
+
+    }
+
+
+    .menu li:hover {
+        transition: 0.3s ease;
+    }
+
+    .menu li+li {
+        margin-top: 42px;
+    }
+
+    input[type=checkbox]:checked~.menu {
+        display: block;
+        margin-bottom: 100px;
+    }
+
+    .hamburger {
+        transition: ease-in 11.2s;
+        display: block;
+        /* height: 101%; */
+    }
+
+
+
+
+
+            <nav className="navbar">
+                <Link to="/" className='logo' >
+                    <h2 className='logo-Text'>Sau<span className='r'>र</span>bh
+                    </h2></Link>
+                <ul className="nav-NavLinks">
+                    <input type="checkbox" id="checkbox_toggle" />
+                    <label for="checkbox_toggle" className="hamburger">&#9776;</label>
+                    <div className="menu">
+                        <li><NavLink to="/" end>Home</NavLink></li>
+                        <li><NavLink to={"/projects"}>Projects</NavLink></li>
+                        <li><NavLink to={"/about"}>About</NavLink></li>
+                    </div>
+                </ul>
+            </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            import React, { useState, useEffect } from 'react'
+import '../styles/nav.css'
+import { NavLink, Link ,useLocation} from 'react-router-dom'
+import ReorderIcon from "@material-ui/icons/Reorder"
+
+
+
+const Navbar = () => {
+
+    const [expandNavbar, setExpandNavbar] = useState(false)
+    const location = useLocation();
+
+    useEffect(() => {
+        setExpandNavbar(false)
+    },[location])
+
+    return (
+<div className="wrapper">
+        <nav className='nav'>
+
+            <Link to="/" className='logo' >
+                <h2 className='logo-Text'>Sau<span className='r'>र</span>bh
+                </h2></Link>
+
+            <div className="navbar" id={expandNavbar ? "open" : "close"}>
+                <div className="toggleButton"> 
+                    <button className='btn'
+                    onClick={() => {
+                        setExpandNavbar((prev) => !prev)
+                    }}
+                >
+                    <ReorderIcon />
+                </button>
+                </div>
+                <div className="links">
+                    <NavLink to="/" end>Home</NavLink>
+                    <NavLink to={"/projects"}>Projects</NavLink>
+                    <NavLink to={"/about"}>About</NavLink>
+                </div>
+            </div>
+            </nav>
+        </div>
+    )
+}
+
+export default Navbar
