@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink,Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import "../styles/nav.css"
 
 function NavBar() {
@@ -10,14 +10,14 @@ function NavBar() {
         <>
             <nav className="navbar">
                 <div className="nav-container">
-                    <Link exact to="/" className="nav-logo">
+                    <Link  to="/" className="nav-logo">
                         Sau<span className='r'>र</span>bh
                     </Link>
 
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
                         <li className="nav-item">
                             <NavLink
-                                exact
+                                
                                 to="/"
                                 // activeClassName="active"
                                 className="nav-links"
@@ -27,20 +27,10 @@ function NavBar() {
                                 Home
                             </NavLink>
                         </li>
+
                         <li className="nav-item">
                             <NavLink
-                                exact
-                                to="/about"
-                                // activeClassName="active"
-                                className="nav-links"
-                                onClick={handleClick}
-                            >
-                                About
-                            </NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink
-                                exact
+                                
                                 to="/projects"
                                 // activeClassName="active"
                                 className="nav-links"
@@ -51,13 +41,24 @@ function NavBar() {
                         </li>
                         <li className="nav-item">
                             <NavLink
-                                exact
+                                
+                                to="/about"
+                                // activeClassName="active"
+                                className="nav-links"
+                                onClick={handleClick}
+                            >
+                                About
+                            </NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink
+                                
                                 to="/contact"
                                 // activeClassName="active"
                                 className="nav-links"
                                 onClick={handleClick}
                             >
-                                Contact Us
+                                Contact
                             </NavLink>
                         </li>
                     </ul>

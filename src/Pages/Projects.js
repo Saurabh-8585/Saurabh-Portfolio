@@ -1,8 +1,10 @@
 import React from 'react'
-
+import '../styles/Project.css'
 const Projects = () => {
   return (
-    <div>Projects</div>
+    <div>
+      
+    </div>
   )
 }
 

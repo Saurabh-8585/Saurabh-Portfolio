@@ -1,0 +1,111 @@
+a {
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    gap: 9rem;
+    background-color: #fc7b54;
+    color: white;
+    font-family: 'Montserrat',
+        sans-serif;
+    font-weight: bold;
+    /* position: fixed; */
+    /* bottom: 0;
+    left: 0; */
+    width: 100%;
+    height: 60px;
+    margin-top: 2rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 47px;
+    height: 45px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+.fa-linkedin-in:hover {
+    background-color: #0A66C2;
+    color: white;
+    transition: 0.5 ease;
+}
+
+.fa-instagram:hover {
+    background-color: #d6249f;
+    color: white;
+    transition: 0.5 ease;
+}
+
+.fa-github:hover {
+    background-color: #171515;
+    color: white;
+    transition: 0.5 ease;
+}
+
+.fa-twitter:hover {
+    background-color: #00acee;
+    color: white;
+    transition: 0.5 ease;
+}
+
+.fa-linkedin-in {
+    color: #0A66C2;
+}
+
+.fa-github {
+    color: #171515;
+}
+
+.fa-instagram {
+    color: #d6249f;
+}
+
+.fa-twitter {
+    color: #00acee;
+}
+
+@media screen and (max-width: 960px) {
+    footer {
+        font-size: 1.5rem;
+        gap: 1rem;
+        height: 70px;
+        flex-direction: column;
+    }
+
+    .icon {
+        font-size: 1.5rem;
+        width: 27px;
+        height: 25px;
+    }
+}
+
+@media (min-width: 768px) and (max-width:1023px) {
+    footer {
+        font-size: 1.5rem;
+        gap: 0.5rem;
+        height: 60px;
+        flex-direction: column;
+    }
+
+    .icon {
+        font-size: 1.7rem;
+        width: 30px;
+        height: 30px;
+    }
+}

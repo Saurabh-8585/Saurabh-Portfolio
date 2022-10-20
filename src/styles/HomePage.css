@@ -1,12 +1,14 @@
 * {
     font-family: 'Montserrat', sans-serif;
 }
+
 .main {
     display: flex;
     justify-content: space-between;
     align-items: center;
     /* border: 2px solid black; */
     margin-top: 4rem;
+    overflow-x: hidden;
 }
 
 
@@ -31,6 +33,20 @@
     animation: floating 5s linear infinite;
 }
 
+@keyframes floating {
+
+    0%,
+    100% {
+        transform: translateY(0rem);
+
+    }
+
+    50% {
+        transform: translateY(-1rem);
+
+    }
+}
+
 .button {
 
     border: none;
@@ -50,38 +66,64 @@
     transition: 0.3s ease;
 }
 
-@keyframes floating {
 
-    0%,
-    100% {
-        transform: translateY(0rem);
 
-    }
 
-    50% {
-        transform: translateY(-1rem);
-
-    }
+.head {
+    font-size: 3.5rem;
+    padding: 0;
+    color: #fc7b54;
 }
-.section{
+
+.skill-img {
+    height: 400px;
+    width: 530px;
+    animation: floating 5s linear infinite;
+}
+
+.skills {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-.skills {
-    font-size: 2rem;
-    text-align: center;
-}
-.bar{
-    border: 2px solid black;
-    padding: 4px;
-        background-color: red;
+    margin-right: 15rem;
 }
 
+.skill-list {
+    font-size: 2.9rem;
+    margin-top: 1rem;
+    gap: 1rem;
+    font-weight: bold;
+}
 
+.skill-list li {
+    margin-top: 1rem;
+}
 
+.react {
+    font-size: 3rem;
+    color: #61dbfb;
+}
 
+.js {
+    color: #f0db4f;
+}
+
+.db {
+    color: #4DB33D;
+}
+
+.bootstrap {
+    color: #563d7c;
+}
+
+.css {
+    color: #264de4;
+}
+
+.html {
+    color: #f06529;
+}
 
 @media (max-width: 768px) {
     .main {
@@ -100,7 +142,7 @@
     }
 
     .main-text {
-        font-size: 2rem;
+        font-size: 1.9rem;
     }
 
     .text {
@@ -115,4 +157,63 @@
         margin-top: 2rem;
     }
 
+    .fd {
+        flex-direction: column-reverse;
+    }
+
+    .skills {
+        margin-right: 0;
+    }
+
+    .skill-img {
+        height: 270px;
+        width: 390px;
+        margin: 1rem;
+    }
+}
+@media (min-width: 768px) and (max-width:1023px) {
+    .main {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero-img {
+        height: 450px;
+        width: 450px;
+        margin: 1rem;
+    }
+
+    .intro {
+        font-size: 4rem;
+    }
+
+    .main-text {
+        font-size: 2.9rem;
+    }
+
+    .text {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .button {
+        margin-top: 2rem;
+    }
+
+    .fd {
+        flex-direction: column-reverse;
+    }
+
+    .skills {
+        margin-right: 0;
+    }
+
+    .skill-img {
+        height: 390px;
+        width: 530px;
+        margin: 1rem;
+    }
 }
