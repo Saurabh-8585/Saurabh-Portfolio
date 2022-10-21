@@ -10,15 +10,12 @@ footer {
     gap: 9rem;
     background-color: #fc7b54;
     color: white;
-    font-family: 'Montserrat',
-        sans-serif;
+    font-family: 'Montserrat',sans-serif;
     font-weight: bold;
-    /* position: fixed; */
-    /* bottom: 0;
-    left: 0; */
     width: 100%;
-    height: 60px;
-    margin-top: 2rem;
+    height: 70px;
+    /* margin-top: 41.1rem; */
+    /* margin-top: 231px; */
 }
 
 .social-links {
@@ -86,7 +83,9 @@ footer {
         gap: 1rem;
         height: 70px;
         flex-direction: column;
-    }
+        /* margin-top: 50rem; */
+        /* margin-top: 510px; */
+        }
 
     .icon {
         font-size: 1.5rem;
@@ -101,6 +100,8 @@ footer {
         gap: 0.5rem;
         height: 60px;
         flex-direction: column;
+        /* margin-top: 49rem; */
+        /* margin-top:510px; */
     }
 
     .icon {

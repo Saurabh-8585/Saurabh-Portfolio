@@ -166,8 +166,8 @@
     }
 
     .skill-img {
-        height: 270px;
-        width: 390px;
+        height: 260px;
+        width: 350px;
         margin: 1rem;
     }
 }
@@ -178,17 +178,17 @@
     }
 
     .hero-img {
-        height: 450px;
-        width: 450px;
+        height: 550px;
+        width: 580px;
         margin: 1rem;
     }
 
     .intro {
-        font-size: 4rem;
+        font-size: 5rem;
     }
 
     .main-text {
-        font-size: 2.9rem;
+        font-size: 3.4rem;
     }
 
     .text {
@@ -212,8 +212,8 @@
     }
 
     .skill-img {
-        height: 390px;
-        width: 530px;
+        height: 450px;
+        width: 650px;
         margin: 1rem;
     }
 }

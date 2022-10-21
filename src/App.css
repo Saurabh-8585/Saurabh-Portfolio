@@ -11,6 +11,9 @@ html {
     font-size: 62.5%;
     font-family: "Poppins", serif;
 }
+body{
+    min-height: 100vh;
+}
 li{
     list-style-type: none;
 }
