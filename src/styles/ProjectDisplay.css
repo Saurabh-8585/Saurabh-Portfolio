@@ -1,0 +1,144 @@
+.project-title {
+    /* margin-top: 2.2rem; */
+    color: rgb(255 65 7);
+    font-size: 3rem;
+}
+
+.project-display-container {
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+
+}
+
+.project-image-container {
+    height: 410px;
+    width: 500px;
+    /* border: 2px solid black; */
+    margin-bottom: 6rem;
+}
+
+.project-image {
+    height: 100%;
+    width: 100%;
+}
+
+.buttons {
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.link-btn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 13rem;
+    height: 4rem;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+
+.link-btn:hover {
+    transition: 0.3s ease;
+    background-color: #fc7b54;
+    color: white;
+}
+
+.display-project {
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 7rem;
+}
+
+.project-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+ .project-info h1 {
+     font-size: 2.7rem;
+     margin-top: 2rem;
+ }
+.project-paragraph {
+    margin-top: 2rem;
+    font-size: 2rem;
+    width: 300px;
+}
+
+@media screen and (max-width: 960px) {
+    .display-project {
+        flex-direction: column;
+        margin: 12rem 0;
+    }
+
+    .project-image-container {
+        height: 250px;
+        width: 100%;
+    }
+
+    .buttons {
+        justify-content: center;
+        gap: 4rem;
+    }
+
+    .link-btn {
+
+        justify-content: center;
+        gap: 1rem;
+        width: 11rem;
+        height: 4rem;
+        border: none;
+        border-radius: 10px;
+        font-size: 1.2rem;
+    }
+
+    .project-info h1 {
+        font-size: 1.7rem;
+        margin-top: 2rem;
+    }
+
+    .btn-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        color: black;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width:1023px) {
+    .display-project {
+        flex-direction: column;
+    }
+}

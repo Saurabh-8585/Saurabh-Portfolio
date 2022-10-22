@@ -49,7 +49,7 @@ footer {
     transition: 0.5 ease;
 }
 
-.fa-github:hover {
+.git:hover {
     background-color: #171515;
     color: white;
     transition: 0.5 ease;
@@ -65,7 +65,7 @@ footer {
     color: #0A66C2;
 }
 
-.fa-github {
+.git {
     color: #171515;
 }
 
