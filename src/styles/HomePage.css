@@ -33,19 +33,6 @@
     animation: floating 5s linear infinite;
 }
 
-@keyframes floating {
-
-    0%,
-    100% {
-        transform: translateY(0rem);
-
-    }
-
-    50% {
-        transform: translateY(-1rem);
-
-    }
-}
 
 .button {
 

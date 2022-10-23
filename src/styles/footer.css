@@ -20,9 +20,12 @@ footer {
 
 .social-links {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    gap: 2rem;
+    width: 250px;
+    margin-left: 3rem;
+        /* background-color: red; */
+    /* gap: 2rem; */
 }
 
 .icon {
@@ -92,6 +95,9 @@ footer {
         width: 27px;
         height: 25px;
     }
+    .social-links{
+        width: 150px;
+    }
 }
 
 @media (min-width: 768px) and (max-width:1023px) {
@@ -109,4 +115,7 @@ footer {
         width: 30px;
         height: 30px;
     }
+         .social-links {
+             width: 200px;
+         }
 }

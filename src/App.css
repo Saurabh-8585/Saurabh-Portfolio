@@ -20,3 +20,16 @@ li{
 .text-center{
     text-align: center;
 }
+@keyframes floating {
+
+    0%,
+    100% {
+        transform: translateY(0rem);
+
+    }
+
+    50% {
+        transform: translateY(-1rem);
+
+    }
+}

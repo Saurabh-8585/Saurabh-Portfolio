@@ -1,0 +1,148 @@
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3rem 0;
+    /* border: 2px solid black; */
+}
+
+form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    height: 590px;
+    width: 500px;
+    box-shadow: 0px 8px 13px rgba(0, 0, 0, 0.2);
+}
+
+form .name,
+.email,
+.textarea {
+    margin-top: 3rem;
+    width: 90%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    resize: none;
+    border-radius: 8px;
+    border: 0.1px solid black;
+    font-size: 1.5rem;
+
+}
+
+.textarea {
+    padding-top: 4rem;
+}
+
+.name:focus {
+    outline: none;
+}
+
+.email:focus {
+    outline: none;
+}
+
+.textarea:focus {
+    outline: none;
+}
+
+.name,
+.email {
+    height: 40px;
+}
+
+.submit {
+    margin-top: 4rem;
+    font-size: 2rem;
+    background-color: #fc7b54;
+}
+
+.submit:hover {
+    background-color: black;
+}
+
+.submit-msg {
+    margin: 1.5rem 0;
+    font-size: 3rem;
+}
+
+.contact-img {
+    height: 100%;
+    width: 100%;
+    animation: floating 5s linear infinite;
+}
+
+.contact-img-container {
+    height: 630px;
+    width: 630px;
+}
+
+@media screen and (max-width: 760px) {
+    .contact-container {
+        flex-direction: column;
+        margin: 3rem 0;
+    }
+
+    form {
+        height: 450px;
+        width: 310px;
+        margin: 3rem 0;
+    }
+
+    form .name,
+    .email,
+    .textarea {
+        margin-top: 3rem;
+        font-size: 1.5rem;
+    }
+
+    .submit {
+        font-size: 1.5rem;
+    }
+
+    .submit-msg {
+        font-size: 1.7rem;
+        transition: 0.3s ease;
+    }
+
+    .contact-img-container {
+        height: 350px;
+        width: 330px;
+    }
+}
+
+@media (min-width: 768px) and (max-width:1023px) {
+    .contact-container {
+            flex-direction: column;
+            margin: 3rem 0;
+        }
+    
+        form {
+            height: 620px;
+            width: 520px;
+            margin: 3rem 0;
+        }
+    
+        form .name,
+        .email,
+        .textarea {
+            margin-top: 4rem;
+            font-size: 1.6rem;
+        }
+    
+        .submit {
+            font-size: 2.3rem;
+        }
+    
+        .submit-msg {
+            font-size: 2rem;
+            transition: 0.3s ease;
+        }
+    
+        .contact-img-container {
+            height: 490px;
+            width: 520px;
+        }
+}
