@@ -9,7 +9,7 @@ export const ProjectList = [
         image: PortfolioLogo,
         skills: "React JS , CSS",
         codeLink: "https://github.com/Saurabh-8585/Saurabh-Dev",
-        demoLink:"",
+        demoLink:"https://saurabhkhatmode.netlify.app/",
         info: "This is a Personal Portfolio to showcase my projects,skills and you will find information about me"
     },
     {
