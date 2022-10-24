@@ -27,9 +27,9 @@ const HomePage = () => {
             }
           </h1>
           <div className="btn">
-            <button className='button'>
+            <a href="resume.pdf" download="Saurabh Khatmode Resume.pdf"><button className='button'>
               Download Resume
-            </button>
+            </button></a>
           </div>
         </div>
         <div className="hero">
