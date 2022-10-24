@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <footer>
             <div className="copyright">
-                <p> &copy;2022 Saurabh Khatmode  </p>
+                <p> Design and Developed by &copy; Saurabh Khatmode  </p>
             </div>
             <div className="social-links">
                 <a href="https://www.linkedin.com/in/saurabh-khatmode/" target="_blank" rel='noreferrer'><i className="fa-brands fa-linkedin-in icon"></i></a>

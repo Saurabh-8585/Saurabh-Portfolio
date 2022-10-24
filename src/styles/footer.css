@@ -7,15 +7,14 @@ footer {
     justify-content: center;
     align-items: center;
     font-size: 3rem;
-    gap: 9rem;
+    flex-direction: column;
+    /* gap: 9rem; */
     background-color: #fc7b54;
     color: white;
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     width: 100%;
-    height: 70px;
-    /* margin-top: 41.1rem; */
-    /* margin-top: 231px; */
+    height: 110px;
 }
 
 .social-links {
@@ -24,7 +23,7 @@ footer {
     align-items: center;
     width: 250px;
     margin-left: 3rem;
-        /* background-color: red; */
+    /* background-color: red; */
     /* gap: 2rem; */
 }
 
@@ -38,6 +37,7 @@ footer {
     border-radius: 50%;
     cursor: pointer;
     font-size: 3rem;
+    margin-top: 1rem;
 }
 
 .fa-linkedin-in:hover {
@@ -88,14 +88,20 @@ footer {
         flex-direction: column;
         /* margin-top: 50rem; */
         /* margin-top: 510px; */
-        }
+    }
+
+    .copyright p {
+        font-size: 1.4rem;
+    }
 
     .icon {
         font-size: 1.5rem;
         width: 27px;
         height: 25px;
+        margin-top: 0.7rem;
     }
-    .social-links{
+
+    .social-links {
         width: 150px;
     }
 }
@@ -104,18 +110,24 @@ footer {
     footer {
         font-size: 1.5rem;
         gap: 0.5rem;
-        height: 60px;
+        height: 70px;
         flex-direction: column;
         /* margin-top: 49rem; */
         /* margin-top:510px; */
+    }
+
+    .copyright p {
+        font-size: 2rem;
     }
 
     .icon {
         font-size: 1.7rem;
         width: 30px;
         height: 30px;
+        margin-top: 0.5rem;
     }
-         .social-links {
-             width: 200px;
-         }
+
+    .social-links {
+        width: 200px;
+    }
 }

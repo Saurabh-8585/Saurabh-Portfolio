@@ -100,7 +100,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="hero">
+        <div className="hero about-img">
           <img src={AboutImg} alt="about" className='skill-img' />
         </div>
       </main>

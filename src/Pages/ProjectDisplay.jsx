@@ -16,7 +16,7 @@ const ProjectDisplay = () => {
                         <div className="buttons">
                             <a href={project.codeLink} target="_blank" rel="noreferrer"><button className='link-btn'><i className="fa-brands fa-github btn-icon"></i>Github</button></a>
 
-                            <a href={project.demoLink} target="_blank" rel="noreferrer"><button className='link-btn'><i class="fa-solid fa-link btn-icon"></i>Live Demo</button></a>
+                            <a href={project.demoLink} target="_blank" rel="noreferrer"><button className='link-btn'><i className="fa-solid fa-link btn-icon"></i>Live Demo</button></a>
                         </div>
                     </div>
                     <div className="project-info">

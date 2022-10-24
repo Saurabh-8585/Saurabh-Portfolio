@@ -1,8 +1,18 @@
+.contact-h1 {
+    color: rgb(255, 65, 7);
+    font-size: 4rem;
+}
+form h1{
+    color: #fc7b54;
+        margin-top: 2rem;
+}
+
+
 .contact-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 3rem 0;
+    margin: 5rem 0;
     /* border: 2px solid black; */
 }
 
@@ -65,7 +75,7 @@ form .name,
 
 .submit-msg {
     margin: 1.5rem 0;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .contact-img {
@@ -103,7 +113,7 @@ form .name,
     }
 
     .submit-msg {
-        font-size: 1.7rem;
+        font-size: 1.3rem;
         transition: 0.3s ease;
     }
 
@@ -115,34 +125,34 @@ form .name,
 
 @media (min-width: 768px) and (max-width:1023px) {
     .contact-container {
-            flex-direction: column;
-            margin: 3rem 0;
-        }
-    
-        form {
-            height: 620px;
-            width: 520px;
-            margin: 3rem 0;
-        }
-    
-        form .name,
-        .email,
-        .textarea {
-            margin-top: 4rem;
-            font-size: 1.6rem;
-        }
-    
-        .submit {
-            font-size: 2.3rem;
-        }
-    
-        .submit-msg {
-            font-size: 2rem;
-            transition: 0.3s ease;
-        }
-    
-        .contact-img-container {
-            height: 490px;
-            width: 520px;
-        }
+        flex-direction: column;
+        margin: 3rem 0;
+    }
+
+    form {
+        height: 620px;
+        width: 520px;
+        margin: 3rem 0;
+    }
+
+    form .name,
+    .email,
+    .textarea {
+        margin-top: 4rem;
+        font-size: 1.6rem;
+    }
+
+    .submit {
+        font-size: 2.3rem;
+    }
+
+    .submit-msg {
+        font-size: 2rem;
+        transition: 0.3s ease;
+    }
+
+    .contact-img-container {
+        height: 490px;
+        width: 520px;
+    }
 }
