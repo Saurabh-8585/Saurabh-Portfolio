@@ -81,7 +81,9 @@
     gap: 1rem;
     font-weight: bold;
 }
-
+.simg{
+margin-left: 2rem;
+}
 .skill-list li {
     margin-top: 1rem;
 }

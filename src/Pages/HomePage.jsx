@@ -39,7 +39,7 @@ const HomePage = () => {
 
       <main className="main fd">
         <div className="hero">
-          <img src={SkillImg} alt="hero" className='skill-img' />
+          <img src={SkillImg} alt="hero" className='skill-img simg' />
         </div>
         <div className="skills ">
           <h2 className='text head'>Skills</h2>
@@ -48,6 +48,7 @@ const HomePage = () => {
             <li>JavaScript <i className="fa-brands fa-square-js js"></i></li>
             <li>MongoDB <i className="fa-solid fa-database db"></i></li>
             <li>Bootstrap <i className="fa-brands fa-bootstrap bootstrap"></i></li>
+            <li>Github <i className="fa-brands fa-github"></i></li>
             <li>CSS <i className="fa-brands fa-css3-alt css"></i></li>
             <li>HTML <i className="fa-brands fa-html5 html"></i></li>
           </ul>
