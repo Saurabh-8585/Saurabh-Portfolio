@@ -68,7 +68,6 @@
 
 .display-project {
     width: 100%;
-    /* border: 2px solid black; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -107,13 +106,11 @@
 
     .buttons {
         justify-content: space-around;
-        /* gap: 4rem; */
     }
 
     .link-btn {
 
         justify-content: space-around;
-        /* gap: 1rem; */
         width: 11rem;
         height: 4rem;
         font-size: 1.rem;

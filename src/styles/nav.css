@@ -79,10 +79,6 @@
     background: #fc7b54;
 }
 
-/* .nav-item .active {
-    color: #ffdd40;
-    border: 1px solid #ffdd40;
-} */
 .active {
     color: #fc7b54;
 }
@@ -114,11 +110,6 @@
         z-index: 1;
     }
 
-    /* 
-    .nav-item .active {
-        color:#fc7b54;
-        border: none;
-    } */
 
 
     .nav-links {

@@ -6,7 +6,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border: 2px solid black; */
     margin-top: 4rem;
     overflow-x: hidden;
 }

@@ -7,32 +7,17 @@
 }
 
 .main-container {
-    /* border: 2px solid black; */
     height: 350px;
     width: 400px;
     display: flex;
-    /* justify-content: center; */
     border-radius: 18px;
     align-items: center;
     flex-direction: column;
     box-shadow: 0px 8px 13px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     margin: 4rem;
-    /* background-color: red; */
-    /* transform: translateX(400%); */
 }
 
-/* .main-container:nth-of-type(even) {
-    animation: ani 3s ease-in;
-    background-color: red;
-    transform: translateX(400%);
-}
-
-@keyframes ani {
-    100% {
-    transform: translateX(0);
-    }
-} */
 
 .main-container:hover {
     transform: scale(1.05);
