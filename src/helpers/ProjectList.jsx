@@ -28,7 +28,7 @@ export const ProjectList = [
         skills: "React JS , CSS",
         codeLink:"https://github.com/Saurabh-8585/WeatherApp",
         demoLink:"https://saurabh-8585.github.io/WeatherApp/",
-        info: "This is real time Weather Web Application based on OpenWeatherAPI. It displays The current temperature as well as maximum temperature,minimum temperature,weather,wind speed,sunrise,sunset,humidity,pressure "
+        info: "This is real time Weather Web Application based on OpenWeatherAPI. It displays The current temperature as well as ,max-min temperature , weather,wind speed,sunrise,sunset,humidity,pressure "
     },
     {
         key: 4,
@@ -37,6 +37,6 @@ export const ProjectList = [
         skills: "React JS ,Bootstrap",
         codeLink: "https://github.com/Saurabh-8585/TextUtils",
         demoLink:"https://saurabh-8585.github.io/TextUtils/",
-        info: "This is my First React JS.It is simple text editor you can perform editing on text in that web application and you preview it"
+        info: "This is my First React JS project . It is simple text editor you can perform editing on text in that web application and you preview it"
     },
 ]

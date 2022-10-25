@@ -1,7 +1,7 @@
 import React from 'react'
+import "../styles/Contact.css"
 import ContactForm from '../components/ContactForm'
 import ContactImg from '../assets/contact us.jpg'
-import "../styles/Contact.css"
 const Contact = () => {
     return (
         <>

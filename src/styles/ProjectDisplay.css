@@ -90,7 +90,9 @@
 .project-paragraph {
     margin-top: 2rem;
     font-size: 2rem;
-    width: 300px;
+    width: 312px;
+    text-align: center;
+    word-wrap: break-word;
 }
 
 @media screen and (max-width: 960px) {

@@ -25,7 +25,7 @@ const About = () => {
               color: "#fff"
             }}
 
-            icon={<i class="fa-solid fa-graduation-cap about-icon"></i>}>
+            icon={<i className="fa-solid fa-graduation-cap about-icon"></i>}>
             <h3 className="vertical-timeline-element-title" >
               Savitribai Phule Pune University 
             </h3>
@@ -46,7 +46,7 @@ const About = () => {
               background: "#fc7b54",
               color: "#fff"
             }}
-            icon={<i class="fa-solid fa-building-columns about-icon"></i>}>
+            icon={<i className="fa-solid fa-building-columns about-icon"></i>}>
             
             <h3 className="vertical-timeline-element-title" >
               Savitribai Phule Pune University
@@ -72,7 +72,7 @@ const About = () => {
               background: "#fc7b54",
               color: "#fff"
             }}
-            icon={<i class="fa-solid fa-school about-icon"></i>}>
+            icon={<i className="fa-solid fa-school about-icon"></i>}>
             
             <h3 className="vertical-timeline-element-title" >
               Pune District Education Society (PDEA)

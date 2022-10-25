@@ -1,7 +1,7 @@
 import React from 'react'
+import '../styles/HomePage.css'
 import hero from "../assets/hero.jpg"
 import SkillImg from '../assets/Skills.jpg'
-import '../styles/HomePage.css'
 import Typed from "react-typed";
 const HomePage = () => {
 
