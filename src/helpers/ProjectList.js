@@ -3,7 +3,17 @@ import RecipeFinder from '../assets/Recipe-Finder-Logo.jpg'
 import WeatherApp from '../assets/Weather-App-Logo.jpg'
 import TextEditor from '../assets/Text-Editor-logo.jpg'
 import IMDBLogo from '../assets/IMDB logo.jpg'
+import ECmomLogo from '../assets/E-comm-logo.jpg'
 export const ProjectList = [
+    {
+        key: 0,
+        name: "ShopIt(E-commerce)",
+        image: ECmomLogo,
+        skills: "React JS , MongoDB, NodeJS, ExpressJS",
+        codeLink: "https://github.com/Saurabh-8585/MERN-E-Commerce-Frontend",
+        demoLink: "https://e-shopit.vercel.app/",
+        info: "The e-commerce web app is a feature-rich platform that provides user authentication and authorization using JWT. It has an admin dashboard for managing products, orders, users, and statistics. The platform includes a payment gateway and mail service, with features like Forgot Password and Reset Password. The platform also allows users to search for products, view product details and reviews, manage their cart, and track order history. Overall, it's a comprehensive platform that offers a seamless shopping experience for users."
+    },
     {
         key: 1,
         name: "IMDB-Movie app Clone",
@@ -47,6 +57,5 @@ export const ProjectList = [
         skills: "React JS ,Bootstrap",
         codeLink: "https://github.com/Saurabh-8585/TextUtils",
         demoLink: "https://saurabh-8585.github.io/TextUtils/",
-        info: "My first React JS project is a simple text editor web application that allows users to perform editing on text and preview it in real-time. The user-friendly interface enables users to easily make changes to the text and see the results in real-time.As a beginner in React JS. This project allowed me to gain experience in using React JS to build web applications and improve my skills in web development."
     },
 ]

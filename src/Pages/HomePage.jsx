@@ -14,8 +14,8 @@ const HomePage = () => {
             {<Typed
               strings={[
                 "Saurabh Khatmode",
-                "MERN Stack Developer",
                 "React JS Developer",
+                "MERN Stack Developer",
               ]}
               typeSpeed={150}
               backSpeed={100}

@@ -23,7 +23,7 @@ const ProjectDisplay = () => {
                         </div>
                     </div>
                     <div className="project-info">
-                        <h1 className='text-center'>Skills : {project.skills}</h1>
+                        <h1 className='text-center'>Tech-Stack : {project.skills}</h1>
                         <p className='project-paragraph text-center'>{project.info}</p>
                     </div>
                 </div>
