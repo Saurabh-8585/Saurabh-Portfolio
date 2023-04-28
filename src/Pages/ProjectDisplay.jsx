@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../styles/ProjectDisplay.css'
 import { useParams } from 'react-router-dom'
 import { ProjectList } from '../helpers/ProjectList';
 
 const ProjectDisplay = () => {
     const { id } = useParams();
+    useEffect(() => {
+        window.scroll(0, 0)
+    }, [])
     const project = ProjectList[id]
     return (
         <>

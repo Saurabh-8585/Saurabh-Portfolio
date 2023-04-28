@@ -14,9 +14,8 @@ const HomePage = () => {
             {<Typed
               strings={[
                 "Saurabh Khatmode",
+                "MERN Stack Developer",
                 "React JS Developer",
-                "Front-End Developer",
-                "Aspiring MERN Stack Developer"
               ]}
               typeSpeed={150}
               backSpeed={100}
@@ -44,13 +43,15 @@ const HomePage = () => {
         <div className="skills ">
           <h2 className='text head'>Skills</h2>
           <ul className='skill-list'>
-            <li>React JS <i className="fa-brands fa-react react"></i></li>
-            <li>JavaScript <i className="fa-brands fa-square-js js"></i></li>
-            <li>MongoDB <i className="fa-solid fa-database db"></i></li>
-            <li>Bootstrap <i className="fa-brands fa-bootstrap bootstrap"></i></li>
-            <li>Github <i className="fa-brands fa-github"></i></li>
-            <li>CSS <i className="fa-brands fa-css3-alt css"></i></li>
-            <li>HTML <i className="fa-brands fa-html5 html"></i></li>
+            <li>JavaScript <i className="fa-brands fa-square-js" style={{ color: "#f0db4f" }}></i></li>
+            <li>React JS <i className="fa-brands fa-react" style={{ color: "#61dbfb" }}></i></li>
+            <li>Node JS <i className="fa-brands fa-node" style={{ color: "#339933" }} ></i></li>
+            <li>Express JS <i className="fa-brands fa-node-js" style={{ color: "#000000" }}></i></li>
+            <li>MongoDB <i className="fa-solid fa-database" style={{ color: "#4DB33D" }}></i></li>
+
+            <li>Git <i className="fa-brands fa-github" ></i></li>
+            {/* <li>CSS <i className="fa-brands fa-css3-alt css" style={{ color: "#264de4" }}></i></li>
+            <li>HTML <i className="fa-brands fa-html5 html" style={{ color: "#f06529" }}></i></li> */}
           </ul>
         </div>
 

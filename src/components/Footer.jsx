@@ -2,9 +2,9 @@ import React from 'react'
 import '../styles/footer.css'
 const Footer = () => {
     return (
-        <footer>
+        <footer className='footer'>
             <div className="copyright">
-                <p> Design and Developed by &copy; Saurabh Khatmode  </p>
+                <p>Developed by &copy;Saurabh Khatmode {new Date().getFullYear()} </p>
             </div>
             <div className="social-links">
                 <a href="https://www.linkedin.com/in/saurabh-khatmode/" target="_blank" rel='noreferrer'><i className="fa-brands fa-linkedin-in icon"></i></a>

@@ -14,7 +14,7 @@
 }
 
 .project-image-container {
-    height: 410px;
+    height: 450px;
     width: 500px;
     /* border: 2px solid black; */
     margin-bottom: 6rem;
@@ -90,9 +90,10 @@
 .project-paragraph {
     margin-top: 2rem;
     font-size: 2rem;
-    width: 312px;
+    width: 500px;
     text-align: center;
     word-wrap: break-word;
+    padding: 0 20px;
 }
 
 @media screen and (max-width: 960px) {
@@ -102,8 +103,8 @@
     }
 
     .project-image-container {
-        height: 250px;
-        width: 100%;
+        height: 300px;
+        width: 90%;
     }
 
     .buttons {
@@ -123,6 +124,10 @@
         margin-top: 2rem;
     }
 
+    .project-paragraph {
+        width: 400px;
+    }
+
     .btn-icon {
         height: 15px;
         width: 15px;
@@ -136,8 +141,8 @@
     }
 
     .project-image-container {
-        height: 500px;
-        width: 100%;
+        height: 490px;
+        width: 80%;
     }
 
     .buttons {

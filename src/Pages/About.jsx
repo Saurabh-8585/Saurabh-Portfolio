@@ -16,7 +16,28 @@ const About = () => {
           }}>
 
           <VerticalTimelineElement
-            
+
+            className='vertical-timeline-element--education'
+
+            date="2023 JAN - 2023 MAR"
+            iconStyle={{
+              background: "#fc7b54",
+              color: "#fff"
+            }}
+
+            icon={<i className="fa-solid fa-briefcase about-icon"></i>}>
+            <h3 className="vertical-timeline-element-title" >
+              Mograsys Technologies
+            </h3>
+            <br />
+            <h3 className="vertical-timeline-element-title" >
+              Software Developer Intern
+            </h3>
+
+            <p>React JS, TypeScript, Tailwind CSS</p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+
             className='vertical-timeline-element--education'
 
             date="2022 - 2024"
@@ -27,13 +48,13 @@ const About = () => {
 
             icon={<i className="fa-solid fa-graduation-cap about-icon"></i>}>
             <h3 className="vertical-timeline-element-title" >
-              Savitribai Phule Pune University 
+              Savitribai Phule Pune University
             </h3>
             <br />
             <h3 className="vertical-timeline-element-title" >
               Master Of Science , Computer Science MSc(CS)
             </h3>
-         
+
             <p>Post Graduation</p>
           </VerticalTimelineElement>
 
@@ -47,44 +68,27 @@ const About = () => {
               color: "#fff"
             }}
             icon={<i className="fa-solid fa-building-columns about-icon"></i>}>
-            
+
             <h3 className="vertical-timeline-element-title" >
               Savitribai Phule Pune University
             </h3>
             <br />
             <h3 className="vertical-timeline-element-title" >
-             Bachelor Of Vocational,Software Development
+              Bachelor Of Vocational,Software Development
             </h3>
             <br />
             <h3 className="vertical-timeline-element-title" >
-            Total CGPA : 9.56 (81.91%)
+              Total CGPA : 9.56 (81.91%)
             </h3>
 
             <p>Graduation</p>
           </VerticalTimelineElement>
 
-          <VerticalTimelineElement
-            className='vertical-timeline-element--education'
 
-            date="2017 - 2019"
-
-            iconStyle={{
-              background: "#fc7b54",
-              color: "#fff"
-            }}
-            icon={<i className="fa-solid fa-school about-icon"></i>}>
-            
-            <h3 className="vertical-timeline-element-title" >
-              Pune District Education Society (PDEA)
-            </h3>
-            <br />
-            <h3 className="vertical-timeline-element-title" >
-              Annasaheb Magar Junior College
-            </h3>
-            <p>High School</p>
-          </VerticalTimelineElement>
 
         </VerticalTimeline>
+      </div>
+      <div className="">
       </div>
       <main className="main">
 
@@ -94,9 +98,12 @@ const About = () => {
           }}>About</h2>
           <div className='paragraph'>
             <p>
-              I am Saurabh Khatmode from Pune, Maharashtra .
-               I am interested in Web Development,Front-End and React JS . I have completed my graduation in Bachelor of Vocational in Software Development from Savitribai Phule Pune University, and Now I am pursuing my post graduation in Master Of Science , Computer Science MSc(CS).
-              Currently I am Learning MERN Stack.
+              Hi there! My name is Saurabh Khatmode, and I am currently pursuing my post-graduation in Computer Science. I have a passion for web development and I am a MERN stack developer.Throughout my academic and professional career, I have gained experience in using modern web development technologies, including MongoDB, Express, React, and Node.js. I am always looking for new challenges and opportunities to learn and grow as a developer.I have experience in building responsive and user-friendly web applications that are both functional and visually appealing. I am a detail-oriented and dedicated developer. I am committed to staying up-to-date with the latest technologies.
+
+
+
+
+
             </p>
           </div>
         </div>

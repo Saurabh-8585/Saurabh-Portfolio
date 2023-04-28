@@ -12,7 +12,6 @@ const ContactForm = () => {
         e.preventDefault();
         emailjs.sendForm('service_we4p34z', 'template_blnwib8', form.current, 'BeAecrCudO0zJlsCV')
             .then((result) => {
-                console.log(result.text);
                 setMsg(true);
                 form.current.reset();
             }, (error) => {
@@ -38,6 +37,7 @@ const ContactForm = () => {
                     className='email'
                     required="required"
                     placeholder='Enter Your Email'
+                    autoComplete
                 />
 
                 <textarea

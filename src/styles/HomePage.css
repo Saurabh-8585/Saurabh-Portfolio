@@ -88,30 +88,7 @@ margin-left: 2rem;
     margin-top: 1rem;
 }
 
-.react {
-    font-size: 3rem;
-    color: #61dbfb;
-}
-
-.js {
-    color: #f0db4f;
-}
-
-.db {
-    color: #4DB33D;
-}
-
-.bootstrap {
-    color: #563d7c;
-}
-
-.css {
-    color: #264de4;
-}
-
-.html {
-    color: #f06529;
-}
+/*  */
 
 @media (max-width: 768px) {
     .main {
