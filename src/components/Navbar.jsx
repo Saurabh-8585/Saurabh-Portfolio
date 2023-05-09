@@ -11,7 +11,7 @@ function NavBar() {
             <nav className="navbar">
                 <div className="nav-container">
                     <Link  to="/" className="nav-logo">
-                        Sau<span className='r'>र</span>bh
+                        Sau<span className='r'>र</span>bh   
                     </Link>
 
                     <ul className={click ? "nav-menu active" : "nav-menu"}>

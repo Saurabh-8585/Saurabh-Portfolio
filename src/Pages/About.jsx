@@ -3,8 +3,12 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import "react-vertical-timeline-component/style.min.css";
 import '../styles/About.css';
 import AboutImg from '../assets/about.jpg'
+import { useEffect } from 'react';
 
 const About = () => {
+  useEffect(() => {
+    window.scroll(0, 0)
+}, [])
   return (
     <>
 

@@ -2,7 +2,11 @@ import React from 'react'
 import '../styles/Project.css'
 import ProjectItem from '../components/ProjectItem'
 import { ProjectList } from '../helpers/ProjectList'
+import { useEffect } from 'react'
 const Projects = () => {
+  useEffect(() => {
+    window.scroll(0, 0)
+}, [])
   return (
     <div className='projects'>
       <h1 className='text head text-center' style={{

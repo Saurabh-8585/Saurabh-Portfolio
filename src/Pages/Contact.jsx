@@ -2,7 +2,11 @@ import React from 'react'
 import "../styles/Contact.css"
 import ContactForm from '../components/ContactForm'
 import ContactImg from '../assets/contact us.jpg'
+import { useEffect } from 'react'
 const Contact = () => {
+    useEffect(() => {
+        window.scroll(0, 0)
+    }, [])
     return (
         <>
         <h1 className='text-center head'>Contact</h1>
