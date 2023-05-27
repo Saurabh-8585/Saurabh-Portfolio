@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ProjectDisplay from './Pages/ProjectDisplay';
 import Contact from './Pages/Contact';
+import Error404 from './Pages/Error404';
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
             <Route path="/project/:id" element={<ProjectDisplay />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="*" element={<HomePage />} />
+            <Route path="*" element={<Error404 />} />
           </Routes>
           <Footer />
         </div >
