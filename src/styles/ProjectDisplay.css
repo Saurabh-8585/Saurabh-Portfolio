@@ -9,6 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     /* margin: 2rem 0; */
 
 }
@@ -72,6 +73,7 @@
     justify-content: space-around;
     align-items: center;
     margin: 11.7rem 0;
+    /* border: 2px solid black; */
 }
 
 .project-info {
@@ -96,6 +98,38 @@
     padding: 0 25px;
     /* border: 2px solid black; */
 }
+
+.youtube {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+
+
+}
+
+.youtube iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 60px;
+    padding: 40px;
+}
+
+
+@media (max-width: 767px) {
+    .youtube {
+        padding-bottom: 75%;
+    }
+
+    .youtube iframe {
+        padding: 20px;
+        border-radius: 30px;
+    }
+}
+
 
 @media screen and (max-width: 960px) {
     .display-project {

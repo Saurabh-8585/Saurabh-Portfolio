@@ -27,6 +27,20 @@ const ProjectDisplay = () => {
                         <p className='project-paragraph text-center'>{project.info}</p>
                     </div>
                 </div>
+
+                {project.youtube_url &&
+                    <>
+                        <h1 className='text-center project-title'> Demo Video</h1>
+                        <div className="youtube">
+                            <iframe
+                                src={project.youtube_url}
+                                title={project.title}
+
+                            >
+                            </iframe>
+                        </div>
+                    </>
+                }
             </div>
         </>
     )
