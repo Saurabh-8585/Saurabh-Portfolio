@@ -28,19 +28,21 @@ const ProjectDisplay = () => {
                     </div>
                 </div>
 
-                {/* {project.youtube_url &&
+                {project.youtube_url &&
                     <>
                         <h1 className='text-center project-title'> Demo Video</h1>
                         <div className="youtube">
                             <iframe
                                 src={project.youtube_url}
                                 title={project.title}
-
+                                frameborder="0"
+                                allowFullScreen={true}
                             >
                             </iframe>
+
                         </div>
                     </>
-                } */}
+                }
             </div>
         </>
     )
