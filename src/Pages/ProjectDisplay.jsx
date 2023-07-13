@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import '../styles/ProjectDisplay.css'
 import { useParams } from 'react-router-dom'
 import { ProjectList } from '../helpers/ProjectList';
@@ -8,7 +8,7 @@ const ProjectDisplay = () => {
     useEffect(() => {
         window.scroll(0, 0)
     }, [])
-    const project = ProjectList[id]
+    const project = ProjectList[Number(id)];
     return (
         <>
             <h1 className='text-center project-title'>{project.name}</h1>

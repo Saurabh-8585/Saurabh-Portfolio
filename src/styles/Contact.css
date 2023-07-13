@@ -2,9 +2,10 @@
     color: rgb(255, 65, 7);
     font-size: 4rem;
 }
-form h1{
+
+form h1 {
     color: #fc7b54;
-        margin-top: 2rem;
+    margin-top: 2rem;
 }
 
 
@@ -66,6 +67,8 @@ form .name,
     margin-top: 4rem;
     font-size: 2rem;
     background-color: #fc7b54;
+    padding: 10px;
+
 }
 
 .submit:hover {
@@ -87,6 +90,29 @@ form .name,
     height: 630px;
     width: 630px;
 }
+
+.link-btn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 13rem;
+    height: 4rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #fc7b54;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.link-btn:hover {
+    transition: 0.3s ease;
+    background-color: white;
+    color: #fc7b54;
+    border: 2px solid #fc7b54;
+}
+
 
 @media screen and (max-width: 760px) {
     .contact-container {

@@ -48,7 +48,7 @@ const ContactForm = () => {
                     placeholder='Enter Your Message Here    '
                 />
                 <button type='submit' className='link-btn submit'>Send</button>
-                <h1 className='submit-msg'>{msg ? "Thank You For Connecting With Me 🤝" :""}</h1>
+                <h1 className='submit-msg'>{msg ? "Thank You For Connecting With Me 🤝" : ""}</h1>
             </form>
         </div>
     )

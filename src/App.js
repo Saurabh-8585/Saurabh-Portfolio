@@ -1,20 +1,23 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import HomePage from './Pages/HomePage'
-import Projects from './Pages/Projects'
-import About from './Pages/About'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import HomePage from './Pages/HomePage';
 import Footer from './components/Footer';
-import ProjectDisplay from './Pages/ProjectDisplay';
-import Contact from './Pages/Contact';
-import Error404 from './Pages/Error404';
+import { Suspense, lazy } from 'react';
+import Loader from './components/Loader';
+
+const Projects = lazy(() => import('./Pages/Projects'));
+const About = lazy(() => import('./Pages/About'));
+const ProjectDisplay = lazy(() => import('./Pages/ProjectDisplay'));
+const Contact = lazy(() => import('./Pages/Contact'));
+const Error404 = lazy(() => import('./Pages/Error404'));
 
 function App() {
   return (
-    <>
-      <Router>
-        <Navbar />
-        <div className='mt'>
+    <Router>
+      <Navbar />
+      <div className="mt">
+        <Suspense fallback={<Loader />}>
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/projects" element={<Projects />} />
@@ -23,10 +26,10 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<Error404 />} />
           </Routes>
-          <Footer />
-        </div >
-      </Router>
-    </>
+        </Suspense>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
