@@ -51,7 +51,7 @@ const HomePage = () => {
             }
           </h1>
           <div className="btn">
-            <a href='tel:1234567890'>
+            <a href='tel:+917020409952'>
               <button className="button">
                 <i className="fas fa-phone"></i> Call Now
               </button>
