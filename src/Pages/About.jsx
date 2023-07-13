@@ -25,7 +25,7 @@ const About = () => {
 
   return (
     <>
-      <div className="about">
+      <div className="about" id='about'>
         <VerticalTimeline lineColor="#f06529" style={{ backgroundColor: '#f0f0f0' }}>
           <VerticalTimelineElement
             className="vertical-timeline-element--education"

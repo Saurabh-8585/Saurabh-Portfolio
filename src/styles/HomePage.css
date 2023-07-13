@@ -32,19 +32,45 @@
     animation: floating 5s linear infinite;
 }
 
+.tailwind-logo {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+
+}
+.lineDiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-line {
+    margin-top: 30px;
+    color: inherit;
+    font-size: 2rem;
+    text-align: center;
+    width:500px;
+    padding:0 10px;
+    word-break: keep-all;
+
+}
 
 .button {
 
     border: none;
     background-color: black;
     color: white;
-    padding: 1.4rem 1.4rem;
+    /* padding: 1.4rem 1.4rem; */
+    padding: 1.5rem;
     border-radius: 10px;
     border-bottom-right-radius: 20px;
     border-top-left-radius: 20px;
     font-weight: bold;
+    font-size: 1.4rem;
     cursor: pointer;
     margin-top: 5rem;
+
 }
 
 .button:hover {
@@ -81,12 +107,15 @@
     gap: 1rem;
     font-weight: bold;
 }
-.simg{
-margin-left: 2rem;
+
+.simg {
+    margin-left: 2rem;
 }
+
 .skill-list li {
     margin-top: 1rem;
 }
+
 
 /*  */
 

@@ -19,8 +19,8 @@ function App() {
       <div className="mt">
         <Suspense fallback={<Loader />}>
           <Routes>
-            <Route path="/" element={<HomePage />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/" element={<HomePage />} />
             <Route path="/project/:id" element={<ProjectDisplay />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
