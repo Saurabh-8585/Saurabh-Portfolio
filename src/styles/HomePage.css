@@ -38,20 +38,23 @@
     margin-left: 5px;
 
 }
-.lineDiv{
+
+.lineDiv {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+    flex-direction: column;
+
 }
 
 .project-line {
     margin-top: 30px;
     color: inherit;
     font-size: 2rem;
-    text-align: center;
-    width:500px;
-    padding:0 10px;
+    /* text-align: center; */
+    width: 500px;
+    padding: 0 10px;
     word-break: keep-all;
 
 }
@@ -164,6 +167,10 @@
         width: 350px;
         margin: 1rem;
     }
+
+    .project-line {
+        width: 350px;
+    }
 }
 
 @media (min-width: 768px) and (max-width:1023px) {
@@ -210,5 +217,9 @@
         height: 450px;
         width: 650px;
         margin: 1rem;
+    }
+
+    .project-line {
+      width: 400px;
     }
 }

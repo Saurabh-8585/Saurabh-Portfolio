@@ -57,18 +57,25 @@ const HomePage = () => {
               </button>
             </a>
           </div>
-         
+
+          <animated.div className="lineDiv" style={skillsAnimation}>
+            <p className="project-line">
+              Successfully  completed 1 freelancing project and created 6 side projects, including 2 major full-stack projects.
+            </p>
+            <h6 className="project-line">
+              <Link style={{ color: '#fc7b54', }} to='/projects'>
+
+              Projects {' '}
+              <i class="fa-solid fa-arrow-right" style={{ color: 'black' }}></i>
+              </Link>
+            </h6>
+          </animated.div>
         </animated.div>
         <animated.div className="hero" style={heroAnimation}>
           <img src={hero} alt="hero" className="hero-img" />
         </animated.div>
-        
+
       </main>
-      <animated.div className="lineDiv" style={skillsAnimation}>
-      <p className="project-line">
-          Successfully  <b>completed 1 freelancing project</b> and created <b> <Link style={{ color: 'black', fontSize: '2rem', textDecoration: 'underline' }} to='/projects'> 6 side projects, including 2 major full-stack projects.</Link></b>
-      </p>
-      </animated.div>
       <main className="main fd">
         <animated.div className="hero" style={skillsAnimation}>
           <img src={SkillImg} alt="hero" className="skill-img simg" />

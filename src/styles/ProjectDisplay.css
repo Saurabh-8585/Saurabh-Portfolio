@@ -105,6 +105,7 @@
     padding-bottom: 56.25%;
 
 
+
 }
 
 .youtube iframe {
@@ -116,6 +117,7 @@
     border: none;
     border-radius: 60px;
     padding: 40px;
+    border: 1px solid rgb(205, 196, 196);
 }
 
 
