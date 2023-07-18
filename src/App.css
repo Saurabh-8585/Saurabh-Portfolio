@@ -41,3 +41,22 @@ li{
 .mt{
     margin-top: 10rem;
 }
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #fc7b54;
+    border-radius: 4px;
+}
+
+/* For Firefox */
+::-moz-scrollbar {
+    width: 8px;
+}
+
+::-moz-scrollbar-thumb {
+    background-color: #fc7b54;
+    border-radius: 4px;
+}

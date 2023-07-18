@@ -1,0 +1,25 @@
+.secParent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+
+
+@media (max-width: 768px) {
+    .secParent {
+        flex-direction: column-reverse;
+        gap: 1rem;
+        margin-top: 100px;
+    }
+}
+
+@media (min-width: 768px) and (max-width:1023px) {
+    .secParent {
+            flex-direction: column-reverse;
+            margin-top: 100px;
+            gap: 1rem;
+        }
+
+}

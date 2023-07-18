@@ -1,28 +1,41 @@
 import '../styles/Project.css';
 import ProjectItem from '../components/ProjectItem';
-import { ProjectList } from '../helpers/ProjectList';
-import { useEffect } from 'react';
-import { useSpring, animated } from 'react-spring';
+import { ProjectList, clientProject } from '../helpers/ProjectList';
+import { useEffect, useState } from 'react';
+import {  animated, useTransition } from 'react-spring';
 
 const Projects = () => {
+  const Labels = ['All', 'Client', 'Personal'];
+  const [projects, setProjects] = useState([...clientProject, ...ProjectList]);
+  const [activeLabel, setActiveLabel] = useState(Labels[0]);
+
   useEffect(() => {
     window.scroll(0, 0);
   }, []);
 
-  const leftBoxAnimation = useSpring({
-    from: { opacity: 0, transform: 'translate3d(-100%, 0, 0)' },
-    to: { opacity: 1, transform: 'translate3d(0, 0, 0)' },
-    config: { duration: 500 },
+
+
+  const transitions = useTransition(projects, {
+    from: { opacity: 0, transform: 'scale(0.8)' },
+    enter: { opacity: 1, transform: 'scale(1)' },
+    leave: { opacity: 0, transform: 'scale(0.8)' },
+    config: { tension: 200, friction: 20 },
   });
 
-  const rightBoxAnimation = useSpring({
-    from: { opacity: 0, transform: 'translate3d(100%, 0, 0)' },
-    to: { opacity: 1, transform: 'translate3d(0, 0, 0)' },
-    config: { duration: 500 },
-  });
+  const options = {
+    personal: [...ProjectList],
+    all: [...clientProject, ...ProjectList],
+    client: [...clientProject],
+  };
+
+  const handleFilterProjects = (label) => {
+    const filtered = options[label.toLowerCase()];
+    setProjects(filtered);
+    setActiveLabel(label);
+  };
 
   return (
-    <div className="projects" id='projects'>
+    <div className="projects">
       <h1
         className="text head text-center"
         style={{
@@ -32,13 +45,23 @@ const Projects = () => {
       >
         My Projects
       </h1>
-      <div className="projectList">
-        {ProjectList.map((project, index) => (
-          <animated.div
-            key={project.key}
-            style={index % 2 === 0 ? leftBoxAnimation : rightBoxAnimation}
+      <div className="labels">
+        {Labels.map((item, index) => (
+          <h4
+            key={item}
+            onClick={() => handleFilterProjects(item)}
+            className={item === activeLabel ? 'active' : 'labelName'}
+            style={{cursor: 'pointer'}}
           >
-            <ProjectItem id={index} name={project.name} image={project.image} />
+            {item}
+          </h4>
+        ))}
+      </div>
+
+      <div className="projectList">
+        {transitions((style, project, _, index) => (
+          <animated.div style={style}>
+            <ProjectItem id={project.key} name={project.name} image={project.image} isClient={project?.clientDemoLink} key={index} />
           </animated.div>
         ))}
       </div>

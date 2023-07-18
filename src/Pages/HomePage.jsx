@@ -4,7 +4,8 @@ import hero from '../assets/hero.jpg';
 import SkillImg from '../assets/Skills.jpg';
 import Typed from 'react-typed';
 import { useSpring, animated, config } from 'react-spring';
-import { Link } from 'react-router-dom';
+import Section from '../components/Section';
+
 
 const HomePage = () => {
   useEffect(() => {
@@ -32,8 +33,9 @@ const HomePage = () => {
   });
 
   return (
+
     <>
-      <main className="main" id='home'>
+      <main className="main" >
         <animated.div className="text" style={textAnimation}>
           <h2 className="intro">Hello👋🏻 I am,</h2>
           <h1 className="main-text">
@@ -58,24 +60,14 @@ const HomePage = () => {
             </a>
           </div>
 
-          <animated.div className="lineDiv" style={skillsAnimation}>
-            <p className="project-line">
-              Successfully  completed 1 freelancing project and created 6 side projects, including 2 major full-stack projects.
-            </p>
-            <h6 className="project-line">
-              <Link style={{ color: '#fc7b54', }} to='/projects'>
 
-              Projects {' '}
-              <i class="fa-solid fa-arrow-right" style={{ color: 'black' }}></i>
-              </Link>
-            </h6>
-          </animated.div>
         </animated.div>
         <animated.div className="hero" style={heroAnimation}>
           <img src={hero} alt="hero" className="hero-img" />
         </animated.div>
 
       </main>
+      <Section />
       <main className="main fd">
         <animated.div className="hero" style={skillsAnimation}>
           <img src={SkillImg} alt="hero" className="skill-img simg" />
@@ -122,6 +114,8 @@ const HomePage = () => {
         </animated.div>
       </main>
     </>
+
+
   );
 };
 

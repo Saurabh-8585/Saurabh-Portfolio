@@ -19,7 +19,6 @@ function NavBar() {
                             <NavLink
                                 
                                 to="/"
-                                // activeClassName="active"
                                 className="nav-links"
                                 end
                                 onClick={handleClick}
@@ -32,7 +31,6 @@ function NavBar() {
                             <NavLink
                                 
                                 to="/projects"
-                                // activeClassName="active"
                                 className="nav-links"
                                 onClick={handleClick}
                             >
@@ -43,7 +41,6 @@ function NavBar() {
                             <NavLink
                                 
                                 to="/about"
-                                // activeClassName="active"
                                 className="nav-links"
                                 onClick={handleClick}
                             >
@@ -54,7 +51,6 @@ function NavBar() {
                             <NavLink
                                 
                                 to="/contact"
-                                // activeClassName="active"
                                 className="nav-links"
                                 onClick={handleClick}
                             >

@@ -1,9 +1,9 @@
 import PortfolioLogo from '../assets/Protfolio-logo.jpg'
-import RecipeFinder from '../assets/Recipe-Finder-Logo.jpg'
 import WeatherApp from '../assets/Weather-App-Logo.jpg'
-import TextEditor from '../assets/Text-Editor-logo.jpg'
 import IMDBLogo from '../assets/IMDB logo.jpg'
 import ECmomLogo from '../assets/E-comm-logo.jpg'
+import DrivingSchoolLogo from '../assets/driving school.jpg'
+import DigitalMarketingLogo from '../assets/Faq.jpg'
 export const ProjectList = [
     {
         key: 0,
@@ -33,17 +33,9 @@ export const ProjectList = [
         demoLink: "https://saurabhkhatmode.netlify.app/",
         info: "I created a personal portfolio website using React JS, HTML, and CSS to showcase my projects, skills, and background. The website serves as a platform for people to learn more about me and my professional accomplishments.My portfolio features information about my education, work experience, and technical skills, as well as a section highlighting my completed projects. Overall, my portfolio serves as a valuable asset in advancing my career and achieving my professional goals.",
     },
+   
     {
         key: 3,
-        name: "Recipe Finder",
-        image: RecipeFinder,
-        skills: "React JS , Material UI ,HTML, CSS",
-        codeLink: "https://github.com/Saurabh-8585/Recipe-Finder",
-        demoLink: "https://saurabh-8585.github.io/Recipe-Finder/",
-        info: "My recipe finder web application allows users to search for recipes based on specific ingredients and dietary restrictions. The website offers a wide range of recipe options, making it a valuable resource for anyone looking to find inspiration for their next meal.To optimize performance implemented throttling, I was able to ensure that the website runs smoothly and efficiently for all users.",
-    },
-    {
-        key: 4,
         name: "Real Time Weather App",
         image: WeatherApp,
         skills: "React JS ,HTML, CSS",
@@ -51,13 +43,19 @@ export const ProjectList = [
         demoLink: "https://saurabh-8585.github.io/WeatherApp/",
         info: "I developed a real-time weather web application that is powered by the OpenWeatherAPI. The website provides up-to-date information on the current temperature, as well as the maximum and minimum temperature, weather, wind speed, sunrise and sunset times, humidity, and pressure.The user- friendly interface allows users to easily access the weather information for any location in the world.",
     },
+ 
+]
+
+
+export const clientProject = [
     {
-        key: 5,
-        name: "Text Editor",
-        image: TextEditor,
-        skills: "React JS ,Bootstrap",
-        codeLink: "https://github.com/Saurabh-8585/TextUtils",
-        demoLink: "https://saurabh-8585.github.io/TextUtils/",
-        info: "I developed this simple text editor which allows you to do text formatting and many more things",
+        name: "Om Sai Motor Driving School",
+        image: DrivingSchoolLogo,
+        clientDemoLink: "https://omsaimotordrivingschool.in/",
+    },
+    {
+        name: "Titaninfoedge(Digital Marketing)",
+        image: DigitalMarketingLogo,
+        clientDemoLink: "https://omsaimotordrivingschool.in/",
     },
 ]

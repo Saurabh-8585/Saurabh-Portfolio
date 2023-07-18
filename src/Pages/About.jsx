@@ -3,7 +3,7 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 import '../styles/About.css';
 import AboutImg from '../assets/about.jpg';
-import { useSpring, animated,config } from 'react-spring';
+import { useSpring, animated, config } from 'react-spring';
 
 const About = () => {
   useEffect(() => {
@@ -25,7 +25,7 @@ const About = () => {
 
   return (
     <>
-      <div className="about" id='about'>
+      <div className="about" >
         <VerticalTimeline lineColor="#f06529" style={{ backgroundColor: '#f0f0f0' }}>
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
@@ -71,14 +71,10 @@ const About = () => {
           </h2>
           <div className="paragraph">
             <p>
-              Hi there! My name is Saurabh Khatmode, and I am currently pursuing my post-graduation in Computer Science.
-              I have a passion for web development and I am a MERN stack developer.
-              Throughout my academic and professional career, I have gained experience in using modern web development technologies, including MongoDB, Express, React, and Node.js.
-              I am always looking for new challenges and opportunities to learn and grow as a developer.
-              I have experience in building responsive and user-friendly web applications that are both functional and visually appealing.
-              I am a detail-oriented and dedicated developer. I am committed to staying up-to-date with the latest technologies.
+              Hello! I'm Saurabh Khatmode, a passionate web developer pursuing my post-graduation in Computer Science. I thrive on challenges and constantly elevate my skills in the dynamic world of web development.As a meticulous and devoted developer, I prioritize staying at the forefront of cutting-edge technologies. I'm dedicated to delivering exceptional solutions to clients and crafting captivating user experiences.Beyond academia, I've ventured into freelancing, completing 2 successful projects. These experiences taught me effective communication, meeting deadlines, and surpassing client expectations.Whether creating new applications or enhancing existing ones, I'm eager to collaborate with clients and bring their visions to life. My goal is to provide tailored and innovative solutions that leave a lasting impact on businesses and users alike.Looking forward to embracing new challenges and crafting remarkable web experiences that delight clients and users!
             </p>
           </div>
+
         </animated.div>
         <animated.div className="hero about-img" style={aboutImageAnimation}>
           <img src={AboutImg} alt="about" className="skill-img" />

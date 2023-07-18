@@ -23,7 +23,7 @@ const Contact = () => {
 
     return (
         <>
-            <h1 className="text-center head">Contact</h1>
+            <h1 className="text-center head" >Contact</h1>
             <div className="contact-container">
                 <animated.div className="c-form" style={contactFormAnimation}>
                     <ContactForm />
