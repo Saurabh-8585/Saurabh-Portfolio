@@ -53,9 +53,9 @@ export const clientProject = [
         image: DrivingSchoolLogo,
         clientDemoLink: "https://omsaimotordrivingschool.in/",
     },
-    {
-        name: "Titaninfoedge(Digital Marketing)",
-        image: DigitalMarketingLogo,
-        clientDemoLink: "https://omsaimotordrivingschool.in/",
-    },
+    // {
+    //     name: "Titaninfoedge(Digital Marketing)",
+    //     image: DigitalMarketingLogo,
+    //     clientDemoLink: "https://omsaimotordrivingschool.in/",
+    // },
 ]

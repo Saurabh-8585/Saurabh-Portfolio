@@ -29,7 +29,7 @@ const Section = () => {
                 </div>
                 <div className="secChild1" style={textAnimation}>
                     <animated.p className='project-line'>
-                        <span className="main-text" style={{fontSize:"30px", fontWeight:'bold'}}>  Successfully</span> completed 2 freelancing projects and created 4 side projects, including 2 major full-stack projects.
+                        <span className="main-text" style={{fontSize:"30px", fontWeight:'bold'}}>  Successfully</span> completed 1 freelancing projects and created 4 side projects, including 2 major full-stack projects.
                     </animated.p>
                     <h6 className="project-line">
                         <Link style={{ color: '#fc7b54', }} to='/projects'>
