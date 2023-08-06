@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react';
+import  { useEffect } from 'react';
 import '../styles/HomePage.css';
 import hero from '../assets/hero.jpg';
 import SkillImg from '../assets/Skills.jpg';
 import Typed from 'react-typed';
-import { useSpring, animated, config } from 'react-spring';
+import { useSpring, animated, config, useInView } from 'react-spring';
 import Section from '../components/Section';
 
 
@@ -11,24 +11,30 @@ const HomePage = () => {
   useEffect(() => {
     window.scroll(0, 0)
   }, [])
+  const [skillRef, skillInView] = useInView({
+    triggerOnce: true,
+  });
+  const [textRef, textInView] = useInView({
+    triggerOnce: true,
+  });
+  const [heroRef, heroInView] = useInView({
+    triggerOnce: true,
+  });
   const textAnimation = useSpring({
-    from: { opacity: 0, transform: 'translate3d(-100%, 0, 0)' },
-    to: { opacity: 1, transform: 'translate3d(0, 0, 0)' },
-    delay: 500,
+    opacity: textInView ? 1 : 0,
+    transform: textInView ? 'translate3d(0, 0, 0)' : 'translate3d(100%, 0, 0)',
     config: config.default,
   });
 
   const heroAnimation = useSpring({
-    from: { opacity: 0, transform: 'translate3d(100%, 0, 0)' },
-    to: { opacity: 1, transform: 'translate3d(0, 0, 0)' },
-    delay: 500,
+    opacity: heroInView ? 1 : 0,
+    transform: heroInView ? 'translate3d(0, 0, 0)' : 'translate3d(-100%, 0, 0)',
     config: config.default,
   });
 
   const skillsAnimation = useSpring({
-    from: { opacity: 0, transform: 'translate3d(0, 100%, 0)' },
-    to: { opacity: 1, transform: 'translate3d(0, 0, 0)' },
-    delay: 500,
+    opacity: skillInView ? 1 : 0,
+    transform: skillInView ? 'translate3d(0, 0, 0)' : 'translate3d(0, 100%, 0)',
     config: config.default,
   });
 
@@ -36,7 +42,7 @@ const HomePage = () => {
 
     <>
       <main className="main" >
-        <animated.div className="text" style={textAnimation}>
+        <animated.div className="text" ref={textRef} style={textAnimation}>
           <h2 className="intro">Hello👋🏻 I am,</h2>
           <h1 className="main-text">
             {
@@ -62,7 +68,7 @@ const HomePage = () => {
 
 
         </animated.div>
-        <animated.div className="hero" style={heroAnimation}>
+        <animated.div className="hero" ref={heroRef} style={heroAnimation}>
           <img src={hero} alt="hero" className="hero-img" />
         </animated.div>
 
@@ -72,7 +78,7 @@ const HomePage = () => {
         <animated.div className="hero" style={skillsAnimation}>
           <img src={SkillImg} alt="hero" className="skill-img simg" />
         </animated.div>
-        <animated.div className="skills" style={skillsAnimation}>
+        <animated.div ref={skillRef} className="skills" style={skillsAnimation}>
           <h2 className="text head">Skills</h2>
           <ul className="skill-list">
             <li>

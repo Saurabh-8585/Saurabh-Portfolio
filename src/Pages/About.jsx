@@ -71,7 +71,7 @@ const About = () => {
           </h2>
           <div className="paragraph">
             <p>
-              Hello! I'm Saurabh Khatmode, a passionate web developer pursuing my post-graduation in Computer Science. I thrive on challenges and constantly elevate my skills in the dynamic world of web development.As a meticulous and devoted developer, I prioritize staying at the forefront of cutting-edge technologies. I'm dedicated to delivering exceptional solutions to clients and crafting captivating user experiences.Beyond academia, I've ventured into freelancing, completing 2 successful projects. These experiences taught me effective communication, meeting deadlines, and surpassing client expectations.Whether creating new applications or enhancing existing ones, I'm eager to collaborate with clients and bring their visions to life. My goal is to provide tailored and innovative solutions that leave a lasting impact on businesses and users alike.Looking forward to embracing new challenges and crafting remarkable web experiences that delight clients and users!
+              Greetings! I'm Saurabh Khatmode, a dedicated web developer advancing through post-grad studies in Computer Science. Fueled by challenges, I master cutting-edge tech to deliver exceptional user-centric solutions. With 1 freelance triumphs, I excel in communication, deadlines, and exceeding expectations. Let's collaborate to transform visions into impactful web realities. Together, we'll craft memorable user experiences and leave a lasting mark on businesses. Ready to create brilliance
             </p>
           </div>
 

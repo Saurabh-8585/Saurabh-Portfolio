@@ -36,9 +36,12 @@ form .name,
     display: flex;
     justify-content: center;
     resize: none;
+    outline: none;
     border-radius: 8px;
-    border: 0.1px solid black;
+    border: 0.1px solid #fc7b54;
     font-size: 1.5rem;
+    padding: 5px;
+
 
 }
 

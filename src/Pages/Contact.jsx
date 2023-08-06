@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import  { useEffect } from 'react';
 import { useSpring, animated } from 'react-spring';
 import '../styles/Contact.css';
 import ContactForm from '../components/ContactForm';

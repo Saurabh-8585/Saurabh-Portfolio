@@ -2,7 +2,7 @@ import '../styles/Project.css';
 import ProjectItem from '../components/ProjectItem';
 import { ProjectList, clientProject } from '../helpers/ProjectList';
 import { useEffect, useState } from 'react';
-import {  animated, useTransition } from 'react-spring';
+import { animated, useTransition } from 'react-spring';
 
 const Projects = () => {
   const Labels = ['All', 'Client', 'Personal'];
@@ -46,12 +46,12 @@ const Projects = () => {
         My Projects
       </h1>
       <div className="labels">
-        {Labels.map((item, index) => (
+        {Labels.map(item => (
           <h4
             key={item}
             onClick={() => handleFilterProjects(item)}
             className={item === activeLabel ? 'active' : 'labelName'}
-            style={{cursor: 'pointer'}}
+            style={{ cursor: 'pointer' }}
           >
             {item}
           </h4>
