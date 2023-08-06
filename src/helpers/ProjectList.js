@@ -3,7 +3,6 @@ import WeatherApp from '../assets/Weather-App-Logo.jpg'
 import IMDBLogo from '../assets/IMDB logo.jpg'
 import ECmomLogo from '../assets/E-comm-logo.jpg'
 import DrivingSchoolLogo from '../assets/driving school.jpg'
-import DigitalMarketingLogo from '../assets/Faq.jpg'
 export const ProjectList = [
     {
         key: 0,

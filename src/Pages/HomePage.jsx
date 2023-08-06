@@ -1,13 +1,13 @@
-import  { useEffect } from 'react';
+import { useEffect } from 'react';
 import '../styles/HomePage.css';
-import hero from '../assets/hero.jpg';
-import SkillImg from '../assets/Skills.jpg';
 import Typed from 'react-typed';
+import SkillsAnimation from '../assets/animations/SkillsAnimation.json'
+import HeroAnimation from '../assets/animations/HeroAnimation.json'
 import { useSpring, animated, config, useInView } from 'react-spring';
 import Section from '../components/Section';
 
 
-const HomePage = () => {
+const HomePage = ({ Lottie }) => {
   useEffect(() => {
     window.scroll(0, 0)
   }, [])
@@ -28,7 +28,7 @@ const HomePage = () => {
 
   const heroAnimation = useSpring({
     opacity: heroInView ? 1 : 0,
-    transform: heroInView ? 'translate3d(0, 0, 0)' : 'translate3d(-100%, 0, 0)',
+    transform: heroInView ? 'translate3d(0, 0, 0)' : 'translate3d(-90%, 0, 0)',
     config: config.default,
   });
 
@@ -69,14 +69,20 @@ const HomePage = () => {
 
         </animated.div>
         <animated.div className="hero" ref={heroRef} style={heroAnimation}>
-          <img src={hero} alt="hero" className="hero-img" />
+          <Lottie
+            animationData={HeroAnimation}
+            className="hero-img"
+          />
         </animated.div>
 
       </main>
-      <Section />
+      <Section Lottie={Lottie} />
       <main className="main fd">
         <animated.div className="hero" style={skillsAnimation}>
-          <img src={SkillImg} alt="hero" className="skill-img simg" />
+          <Lottie
+            animationData={SkillsAnimation}
+            className="hero-img"
+          />
         </animated.div>
         <animated.div ref={skillRef} className="skills" style={skillsAnimation}>
           <h2 className="text head">Skills</h2>

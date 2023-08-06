@@ -5,6 +5,7 @@ import HomePage from './Pages/HomePage';
 import Footer from './components/Footer';
 import { Suspense, lazy } from 'react';
 import Loader from './components/Loader';
+import Lottie from 'lottie-react';
 
 const Projects = lazy(() => import('./Pages/Projects'));
 const About = lazy(() => import('./Pages/About'));
@@ -19,11 +20,11 @@ function App() {
       <div className="mt">
         <Suspense fallback={<Loader />}>
           <Routes>
+            <Route path="/" element={<HomePage Lottie={Lottie}/>} />
             <Route path="/projects" element={<Projects />} />
-            <Route path="/" element={<HomePage />} />
             <Route path="/project/:id" element={<ProjectDisplay />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/about" element={<About Lottie={Lottie} />} />
+            <Route path="/contact" element={<Contact Lottie={Lottie} />} />
             <Route path="*" element={<Error404 />} />
           </Routes>
         </Suspense>

@@ -2,9 +2,9 @@ import  { useEffect } from 'react';
 import { useSpring, animated } from 'react-spring';
 import '../styles/Contact.css';
 import ContactForm from '../components/ContactForm';
-import ContactImg from '../assets/contact us.jpg';
+import ContactAnimation from '../assets/animations/ContactAnimation.json'
 
-const Contact = () => {
+const Contact = ({Lottie}) => {
     useEffect(() => {
         window.scroll(0, 0);
     }, []);
@@ -29,7 +29,10 @@ const Contact = () => {
                     <ContactForm />
                 </animated.div>
                 <animated.div className="contact-img-container" style={contactImgAnimation}>
-                    <img src={ContactImg} alt="" className="contact-img" />
+                    <Lottie
+                        animationData={ContactAnimation}
+                        className="contact-img"
+                    />
                 </animated.div>
             </div>
         </>

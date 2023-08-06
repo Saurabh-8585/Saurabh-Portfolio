@@ -2,10 +2,10 @@ import React, { useEffect } from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import '../styles/About.css';
-import AboutImg from '../assets/about.jpg';
 import { useSpring, animated, config } from 'react-spring';
+import AboutAnimation from '../assets/animations/AboutAnimation.json'
 
-const About = () => {
+const About = ({ Lottie }) => {
   useEffect(() => {
     window.scroll(0, 0);
   }, []);
@@ -71,13 +71,16 @@ const About = () => {
           </h2>
           <div className="paragraph">
             <p>
-              Greetings! I'm Saurabh Khatmode, a dedicated web developer advancing through post-grad studies in Computer Science. Fueled by challenges, I master cutting-edge tech to deliver exceptional user-centric solutions. With 1 freelance triumphs, I excel in communication, deadlines, and exceeding expectations. Let's collaborate to transform visions into impactful web realities. Together, we'll craft memorable user experiences and leave a lasting mark on businesses. Ready to create brilliance
+              Greetings! I'm Saurabh Khatmode, a dynamic web developer pursuing post-grad studies in Computer Science. Thriving on challenges, I fuel my passion for web development with cutting-edge skills. A meticulous creator, I prioritize tech innovation for exceptional solutions and captivating user experiences. With a successful freelancing record, I've honed communication and deadline skills. I'm ready to collaborate on new visions, crafting tailored solutions that make lasting impacts. Eager for fresh challenges, I'm here to craft remarkable web experiences for clients and users alike!
             </p>
           </div>
 
         </animated.div>
-        <animated.div className="hero about-img" style={aboutImageAnimation}>
-          <img src={AboutImg} alt="about" className="skill-img" />
+        <animated.div className="hero" style={aboutImageAnimation}>
+          <Lottie
+            animationData={AboutAnimation}
+            className="hero-img"
+          />
         </animated.div>
       </main>
     </>
