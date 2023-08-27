@@ -59,7 +59,7 @@ const ProjectDisplay = () => {
                         </div>
                     </animated.div>
                     <animated.div className='project-info' style={infoAnimation}>
-                        <h1 className='text-center'>Tech-Stack : {project.skills}</h1>
+                        <h5 className='text-center '>Tech-Stack : {project.skills}</h5>
                         <p className='project-paragraph text-center'>{project.info}</p>
                     </animated.div>
                 </div>
