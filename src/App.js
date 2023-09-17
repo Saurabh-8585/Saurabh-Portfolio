@@ -20,7 +20,7 @@ function App() {
       <div className="mt">
         <Suspense fallback={<Loader />}>
           <Routes>
-            <Route path="/" element={<HomePage Lottie={Lottie}/>} />
+            <Route path="/" index element={<HomePage Lottie={Lottie} />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/project/:id" element={<ProjectDisplay />} />
             <Route path="/about" element={<About Lottie={Lottie} />} />
