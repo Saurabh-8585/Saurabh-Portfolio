@@ -15,11 +15,12 @@
     "react-spring": "^9.7.2",
     "react-typed": "^1.2.0",
     "react-vertical-timeline-component": "^3.5.2",
+    "rsync": "^0.6.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && cp ./_redirects ./build/_redirects",
+    "build": "react-scripts build && rsync -a _redirects build/",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
