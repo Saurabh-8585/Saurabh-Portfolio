@@ -59,9 +59,9 @@ const HomePage = ({ Lottie }) => {
             }
           </h1>
           <div className="btn">
-            <a href='tel:+917020409952'>
+            <a href='https://drive.google.com/file/d/17nzm-JNVej7mEdi_5HIopZyOvIVv8r8U/view?usp=sharing' target='_blank' rel='noreferrer'>
               <button className="button">
-                <i className="fas fa-phone"></i> Call Now
+                Download CV
               </button>
             </a>
           </div>
